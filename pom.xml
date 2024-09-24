@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>dev.ikm.build</groupId>
     <artifactId>gitub_actions_test_parent</artifactId>
-    <version>1.115.0-SNAPSHOT</version>
+    <version>1.0.0-unique</version>
     <name>General Build Parent</name>
     <description>
         The General Parent that helps to define the build processes that should be used across projects, regardless of.
@@ -109,7 +109,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
-                    <version>${maven.clean-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <!--======================================================-->
@@ -118,19 +118,19 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-install-plugin</artifactId>
-                    <version>${maven.install-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
-                    <version>${maven.deploy-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>${maven-source-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <!--======================================================-->
@@ -140,44 +140,44 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-plugin-plugin</artifactId>
-                    <version>${maven.plugin-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.wrapper</groupId>
                     <artifactId>maven-wrapper</artifactId>
-                    <version>${maven.wrapper-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-gpg-plugin</artifactId>
-                    <version>${maven.gpg-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.commonjava.maven.plugins</groupId>
                     <artifactId>directory-maven-plugin</artifactId>
-                    <version>${maven.directory.plugin}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>${maven.dependency-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>${maven.enforcer-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <!-- Adds the license headers to the top of each file -->
                 <plugin>
                     <groupId>com.mycila</groupId>
                     <artifactId>license-maven-plugin</artifactId>
-                    <version>${maven-license-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                     <configuration>
                         <properties>
                             <owner>${project.organization.name}</owner>
@@ -213,7 +213,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
-                    <version>${maven.versions.plugin}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <!-- Mojohaus license plugin-->
@@ -224,33 +224,33 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>license-maven-plugin</artifactId>
-                    <version>${maven-mojo-license-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <!-- Used to extract changes from JIRA/GitHub -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-changes-plugin</artifactId>
-                    <version>${maven.changes-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
-                    <version>${maven.project-info-reports-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.sonarsource.scanner.maven</groupId>
                     <artifactId>sonar-maven-plugin</artifactId>
-                    <version>${maven.sonarqube.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <!-- This plugin is set to help with development and should not be used for releasing -->
                 <plugin>
                     <groupId>com.amashchenko.maven.plugin</groupId>
                     <artifactId>gitflow-maven-plugin</artifactId>
-                    <version>${maven.github-flow.version}</version>
+                    <version>1.0.0-unique</version>
                     <configuration>
                         <featureNamePattern>^(?!(((feature|hotfix|bugfix))\/(IKM|AR|IAT|IC|IKMC|IKDT|IKMD|IIA|IKMW|IKMM|TE)-\d+(-[0-9A-Za-z\-]*)*)|main|prod|master|dev).*$</featureNamePattern>
                         <releaseVersion>FAIL-SNAPSHOT</releaseVersion>
@@ -269,20 +269,20 @@
                 <plugin>
                     <groupId>org.sonatype.plugins</groupId>
                     <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <version>${nexus-staging-maven-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <!-- This plugin contains various small independent goals to assist with the Maven build lifecycle -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
-                    <version>${build-helper-maven-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>${maven-javadoc-plugin.version}</version>
+                    <version>1.0.0-unique</version>
                 </plugin>
 
             </plugins>
@@ -543,7 +543,7 @@
                             <dependency>
                                 <groupId>org.semver</groupId>
                                 <artifactId>enforcer-rule</artifactId>
-                                <version>${semver-enforcer-rule.version}</version>
+                                <version>1.0.0-unique</version>
                             </dependency>
                         </dependencies>
                     </plugin>
